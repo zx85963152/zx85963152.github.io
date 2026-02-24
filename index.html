@@ -1,58 +1,71 @@
+cat > /var/www/html/index.html << 'EOF'
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zkf666666- Developer</title>
+    <title>zkf666666 - Software Developer</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #0c0c1d, #1a1a2e, #16213e);
-            color: #fff;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .container {
-            text-align: center;
-            padding: 40px;
-        }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-            background: linear-gradient(90deg, #6c63ff, #e942f5);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        p {
-            font-size: 1.2rem;
-            color: #aaa;
-            margin-bottom: 30px;
-        }
-        .links a {
-            display: inline-block;
-            margin: 10px;
-            padding: 12px 30px;
-            border: 2px solid #6c63ff;
-            color: #6c63ff;
-            text-decoration: none;
-            border-radius: 30px;
-            transition: all 0.3s;
-        }
-        .links a:hover {
-            background: #6c63ff;
-            color: #fff;
-        }</style>
+        body { font-family: 'Segoe UI', sans-serif; background: #0d1117; color: #c9d1d9; line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        h1 { color: #58a6ff; font-size: 2.5em; margin-bottom: 10px; }
+        h2 { color: #58a6ff; margin: 30px 0 15px; font-size: 1.5em; }
+        .subtitle { font-size: 1.2em; color: #8b949e; margin-bottom: 30px; }
+        .skills { display: flex; flex-wrap: wrap; gap: 10px; margin: 15px 0; }
+        .skill { background: #21262d; padding: 8px 16px; border-radius: 20px; border: 1px solid #30363d; }
+        .project-card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 20px; margin: 15px 0; }
+        .project-card h3 { color: #58a6ff; margin-bottom: 8px; }
+        .project-card p { color: #8b949e; }
+        a { color: #58a6ff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .contact { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 20px; margin: 15px 0; }
+        footer { text-align: center; margin-top: 50px; color: #8b949e; border-top: 1px solid #30363d; padding-top: 20px; }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>zkf666666</h1>
-        <p>Developer | Tech Enthusiast</p>
-        <div class="links">
-            <a href="https://github.com/zx85963152">GitHub</a>
+        <h1>Hi, I'm zkf666666</h1>
+        <p class="subtitle">A software developer passionate about web development and open source.</p>
+
+        <h2>About Me</h2>
+        <p>I am a developer who loves building things for the web. I enjoy learning new technologies and contributing to open source projects. Currently focused on web development and server administration.</p>
+
+        <h2>Tech Stack</h2>
+        <div class="skills">
+            <span class="skill">JavaScript</span>
+            <span class="skill">Python</span>
+            <span class="skill">HTML/CSS</span>
+            <span class="skill">Linux</span>
+            <span class="skill">Nginx</span>
+            <span class="skill">Git</span>
+            <span class="skill">Node.js</span>
+            <span class="skill">Docker</span>
         </div>
+
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3><a href="https://github.com/zx85963152">My GitHub</a></h3>
+            <p>Check out my open source projects and contributions.</p>
+        </div><div class="project-card">
+            <h3>Personal Website</h3>
+            <p>This website - built with HTML/CSS and hosted on my own server with Nginx.</p>
+        </div>
+        <div class="project-card">
+            <h3>Server Administration</h3>
+            <p>Self-hosted web server running on Linux with Nginx configuration and management.</p>
+        </div>
+
+        <h2>Contact</h2>
+        <div class="contact">
+            <p>GitHub: <a href="https://github.com/zx85963152">zx85963152</a></p>
+            <p>Email: 871659953@qq.com</p>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 zkf666666. All rights reserved.</p>
+        </footer>
     </div>
 </body>
 </html>
+EOF
